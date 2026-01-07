@@ -1,8 +1,11 @@
 # AI Code Quality Linter
 
-![License](https://img.shields.io/github/license/ai-engineer-community/ai-code-quality-linter)
+![License](https://img.shields.io/github/license/yksanjo/ai-code-quality-linter)
+![GitHub stars](https://img.shields.io/github/stars/yksanjo/ai-code-quality-linter?style=social)
+![GitHub issues](https://img.shields.io/github/issues/yksanjo/ai-code-quality-linter)
 ![JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow)
 ![ESLint](https://img.shields.io/badge/ESLint-Plugin-green)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
 ESLint-style rules for agent output that detects SQL injection vulnerabilities in generated code, flags inefficient vector queries, checks for proper error handling in tool calls, and validates prompt injection resistance.
 
