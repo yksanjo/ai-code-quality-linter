@@ -1,53 +1,84 @@
-# AI Code Quality Linter
+# ai-code-quality-linter
 
-![License](https://img.shields.io/github/license/yksanjo/ai-code-quality-linter)
-![GitHub stars](https://img.shields.io/github/stars/yksanjo/ai-code-quality-linter?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yksanjo/ai-code-quality-linter)
-![JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow)
-![ESLint](https://img.shields.io/badge/ESLint-Plugin-green)
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+## Detailed Description
 
-ESLint-style rules for agent output that detects SQL injection vulnerabilities in generated code, flags inefficient vector queries, checks for proper error handling in tool calls, and validates prompt injection resistance.
+ai-code-quality-linter is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-## Features
+## Problem Statement
 
-- ESLint-style rules for agent-generated code
-- Detects SQL injection vulnerabilities
-- Flags inefficient vector queries
-- Checks for proper error handling in tool calls
-- Validates prompt injection resistance
-- Integrates with existing linter workflows
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-## Installation
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-npm install ai-code-quality-linter
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
 ## Usage
 
-```bash
-ai-lint --config .ai-lintrc.json src/
-```
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-## Configuration
+## Quality Standards
 
-Create a `.ai-lintrc.json` file:
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```json
-{
-  "rules": {
-    "no-sql-injection": "error",
-    "efficient-vector-queries": "warn",
-    "proper-error-handling": "error"
-  }
-}
-```
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
